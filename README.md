@@ -149,7 +149,7 @@ Each pass through the loop becomes one `agent.step` span.
 ```mermaid
 flowchart TD
     R["agent.request<br/><i>totals: tokens, cost, steps</i>"]
-    R --> S1[agent.step #1] & S2[agent.step #2] & S3[agent.step #3] & S4[agent.step #4]
+    R --> S1["agent.step 1"] & S2["agent.step 2"] & S3["agent.step 3"] & S4["agent.step 4"]
     S1 --> L1[llm.call] & T1["tool.get_wether<br/>ERROR unknown_tool"]
     S2 --> L2[llm.call] & T2[tool.get_weather ✓]
     S3 --> L3[llm.call] & T3[tool.convert_currency ✓]
